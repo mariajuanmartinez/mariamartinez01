@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--PESTANA-->
+    <link rel="shortcut icon" href="../img/carrito.png" alt="La Venderia">
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>LA VENDERIA</title>
+</head>
+<body id="grilla_contacto">
+    <header id="grilla_header">
+        <img src="../img/carrito.png" alt="Logo de La Venderia" class="logo">
+        <h1>TUS DATOS DE CONTACTO</h1>
+        <nav>
+            <ul id="lista_navegacion">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="novedades.html">Novedades</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="comerciales.html">Condiciones comerciales</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="formulario" class="borde_formulario">
+        <h2>Formulario de contacto</h2>
+
+        <form>
+        <fieldset>
+            <legend class="leyenda_form">Queremos estar cerca tuyo</legend>
+                <div>
+                    <p>Datos personales</p>
+                    <label for="nombre"></label>
+                    <input type="text" id="nombre" required placeholder="Nombre">
+                </div>
+                <div>
+                    <label for="apellido"></label>
+                    <input type="text" id="apellido" required placeholder="Apellido">
+                </div>
+                <div>
+                    <label for="email"></label>
+                    <input type="email" id="email" required placeholder="Correo electrónico">
+                </div>
+                <div>
+                    <label for="Contrasena"></label>
+                    <input type="password" id="Contrasena" required placeholder="Contraseña">
+                </div>
+                <hr>
+                <div>
+                    <p>Indica la ubicacion de tu local</p>
+                    <label for="cbacap">Cba capital</label>
+                    <input type="radio" name="ubicacion" id="cbacap">
+                    <label for="intcba">Interior de Cba</label>
+                    <input type="radio" name="ubicacion" id="intcba">
+                    <label for="restopais">Resto del país</label>
+                    <input type="radio" name="ubicacion" id="restopais">
+                </div>
+                <hr>
+                <div>
+                    <p>Indica preferencia de entrega</p>
+                    <label for="directodom">Directo a tu domilicio</label>
+                    <input type="checkbox" id="directodom">
+                    <label for="retirodecorreo">Retiro de correo cercano</label>
+                    <input type="checkbox" id="retirodecorreo">
+                    <label for="retirovenderia">Retiro en LA VENDERIA</label>
+                    <input type="checkbox" id="retirovenderia">
+                </div>
+                <hr>
+                <div>
+                    <p>¿Deseas recibir nuestro catálogo actualizado?</p>
+                    <label for="select">Selecciona una opción</label>
+                    <select id="select">
+                    <option>si</option>
+                    <option>no</option>
+                    </select>
+                </div>
+
+                <hr>
+                <div>
+                    <p>Nos interesa tu opinión, dejanos tu mensaje:</p>
+                    <textarea id="mensaje" cols="60" rows="10" maxlength="10"></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Enviar formulario">
+                    <input type="reset" value="Limpiar Formulario">
+                </div>
+        </fieldset>
+        </form>
+    </section>
+
+    <footer id="footer">
+        <p>Sitio realizado sólo con fines educativos. Todos los derechos reservados de Maria Juan Martínez.</p>
+    </footer>
+
+</body>
+</html>
