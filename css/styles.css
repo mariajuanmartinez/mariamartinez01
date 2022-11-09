@@ -14,8 +14,12 @@ img {
 
 h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: bolder;
+    background-color: whitesmoke;
+    padding: 1rem;
+    color: crimson;
+    border-style:solid;
 }
 
 h2{
