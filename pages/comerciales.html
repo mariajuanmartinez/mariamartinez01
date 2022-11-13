@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--LINK CSS DE BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <!--PESTANA-->
     <link rel="shortcut icon" href="../img/carrito.png" alt="La Venderia">
     <!--CSS-->
@@ -12,22 +14,130 @@
 </head>
 <body id="grilla_comerciales">
     <header id="grilla_header">
-        <img src="../img/carrito.png" alt="Logo de La Venderia" class="logo">
-        <h1>CONDICIONES COMERCIALES</h1>
-        <nav>
-            <ul id="lista_navegacion">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="novedades.html">Novedades</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="comerciales.html">Condiciones comerciales</a></li>
-            </ul>
+        <!--Menu de navegacion bootstrap-->
+        <nav class="navbar navbar-expand-lg lead w-100">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/carrito.png" alt="Logo de La Venderia" class="logo">
+            </a>
+            <div class="ubicacion-h1">
+                <h1>Condiciones comerciales</h1>
+            </div>
+            <button class="navbar-toggler color-boton" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse ubicacion-menu" id="navbarNav">
+                
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active texto-menu" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link texto-menu" href="productos.html">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link texto-menu" href="novedades.html">Novedades</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link texto-menu" href="contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link texto-menu" href="comerciales.html">Condiciones comerciales</a>
+                </li>
+                </ul>
+            </div>
+            </div>
         </nav>
+
     </header>
 
     <footer id="footer">
-        <p>Sitio realizado sólo con fines educativos. Todos los derechos reservados de Maria Juan Martínez.</p>
+    <!--ESPACIO PARA BANNERS-->
+    <section id="banner-productos" class="container">
+        <h2>Productos de la mejor calidad</h2>
+                
+        <div class="padre-banners row">
+                    
+            <!--Banner1-->
+                <div class="banners_caracteristicas col-12 col-md-6 col-lg-3">
+                    <h3>Precios</h3>
+                    <p class="text_banner">Te ofrecemos los mejores precios en todos nuestros productos</p>
+                </div>
+    
+            <!--Banner2-->
+                <div class="banners_caracteristicas col-12 col-md-6 col-lg-3">
+                    <h3>Marcas</h3>
+                    <p class="text_banner">Disponemos de la mayor variadad de marcas de acuerdo a tu necesidad</p>
+                </div>
+    
+            <!--Banner3-->
+                <div class="banners_caracteristicas col-12 col-md-6 col-lg-3">
+                    <h3>Servicio</h3>
+                    <p class="text_banner">Podes aprovechar de nuestro mejor servicio de entrega a domicilio</p>
+                </div>
+
+            <!--Banner4-->
+                <div class="banners_caracteristicas col-12 col-md-6 col-lg-3">
+                    <h3>Post venta</h3>
+                    <p class="text_banner">Seguimos en contacto ante cualquier necesidad relacionada a nuestro negocio</p>
+                </div>
+        </div>
+        </section>
+
+        <!--ESPACIO PARA REDES-->
+        <section id="banner-redes" class="container">
+                    
+            <div class="padre-redes row">
+                        
+                <!--facebook-->
+                    <div class="banners_caracteristicas col-12 col-md-6 col-lg-3">
+                        <img src="../img/facebook.png" alt="facebbok" class="img_redes">
+                    </div>
+
+                <!--instagram-->
+                <div class="banners_caracteristicas col-12 col-md-6 col-lg-3">
+                    <img src="../img/instagram.png" alt="instagram" class="img_redes">
+                </div>
+
+                <!--twiter-->
+                <div class="banners_caracteristicas col-12 col-md-6 col-lg-3">
+                    <img src="../img/twiter.png" alt="twiter" class="img_redes">
+                </div>
+                
+                <!--youtube-->
+                <div class="banners_caracteristicas col-12 col-md-6 col-lg-3">
+                    <img src="../img/youtube.png" alt="youtube" class="img_redes">
+                </div>
+
+                <!--whatsapp-->
+                <div class="banners_caracteristicas col-12 col-md-6 col-lg-3">
+                    <img src="../img/whatsapp.png" alt="whatsapp" class="img_redes">
+                </div>
+
+                <!--google-->
+                <div class="banners_caracteristicas col-12 col-md-6 col-lg-3">
+                    <img src="../img/google.png" alt="google" class="img_redes">
+                </div>
+
+                <!--peipal-->
+                <div class="banners_caracteristicas col-12 col-md-6 col-lg-3">
+                    <img src="../img/peipal.png" alt="paipal" class="img_redes">
+                </div>
+
+                <!--mercadocreativo-->
+                <div class="banners_caracteristicas col-12 col-md-6 col-lg-3">
+                    <img src="../img/mercadocreativo.png" alt="mercadocreativo" class="img_redes">
+                </div>
+
+            </div>
+            </section>
+
+        <section>
+        <p class="footer_leyenda">Sitio realizado sólo con fines educativos. Todos los derechos reservados de Maria Juan Martínez.</p> 
+        </section> 
     </footer>
 
+        <!--LINK JS DE BOOTSTRAP-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>

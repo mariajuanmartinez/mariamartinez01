@@ -16,15 +16,16 @@ h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 2rem;
     font-weight: bolder;
-    background-color: whitesmoke;
-    padding: 1rem;
-    color: crimson;
-    border-style:solid;
+    background-color: lightgray;
+    padding: 1.2rem;
+    color: black;
+    border-radius: 8px;
+
 }
 
 h2{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.5rem;
+    font-size: 3rem;
     font-weight: bolder;
 }
 
@@ -37,7 +38,6 @@ h2{
     grid-template-areas: 
     "header header header"
     "productos productos productos"
-    "banner banner banner"
     "footer footer footer";
 
     grid-template-columns: repeat(3, 1fr);
@@ -49,11 +49,9 @@ h2{
 #grilla_header {
     grid-area: header;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
     margin-bottom: 4rem;
     background-color: crimson;
-}
+} 
 
 
 @media screen and (max-width: 780px) {
@@ -62,22 +60,26 @@ h2{
     }
 }
 
+/*
 #lista_navegacion {
     display: flex;
     gap: 0.8rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.8rem;
+    
 }
-
+*/
 @media screen and (max-width: 523px) {
     #lista_navegacion {
         flex-direction: column;
     }
 }
 
+/*
 #lista_navegacion li {
     background-color: crimson;
     padding: .5rem 1.5rem;
+
 }
 
 a {
@@ -88,11 +90,15 @@ a {
 ul{
     list-style-type: none;
 }
+*/
 
 .logo {
     width: 10rem;
     height: 10rem;
+    border-radius: 8px;
+    margin-right: 2rem;
 }
+
 
 /*Productos*/
 
@@ -129,13 +135,15 @@ ul{
 
 
 .card_prod{
-    width: 20rem;
-    height: 25rem;
+    width: 28rem;
+    height: 38rem;
     border: solid 2px grey;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 2rem;
+    background-color: white;
 }
 
 .card_prod img {
@@ -143,44 +151,34 @@ ul{
     width: 15rem;
 }
 
-/*Banner*/
-#banner-productos {
-    grid-area: banner;
-    background-color: #eaeaea;
-    margin-top: 4rem;
-    padding: 2rem;
+.img_prod {
+    margin-bottom: 2rem;
 }
 
-#banner-productos h2 {
-    text-align: center;
+.card_titulo {
+    font-size: 1.8rem;
+    font-weight: bolder;
 }
 
-.padre-banners{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-
+.card_precio {
+    font-size: 3rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    
 }
 
-@media screen and (max-width: 780px) {
-    .padre-banners {
-        grid-template-columns: repeat(2, 1fr);
-    }
+.card_desc {
+    font-size: 1.5rem;
+    
 }
 
-@media screen and (max-width: 523px) {
-    .padre-banners {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+.boton_prod {
+    font-size: 1.2rem;
+    padding: 0.8rem;
+    border-radius: 20px;
+    background-color: crimson;
+    color: whitesmoke
 }
 
-.banners_caracteristicas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 /*Footer*/
 #footer {
@@ -192,7 +190,15 @@ ul{
     color: white;
     padding: 3rem;
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 
+
+}
+
+.footer_leyenda {
+    text-align: center;
 }
 
 @media screen and (max-width: 780px) {
@@ -207,6 +213,69 @@ ul{
         flex-direction: column;
         align-items: center;
     }
+}
+
+/*Banner*/
+#banner-productos {
+    background-color: #eaeaea;
+    margin-top: 1.5rem;
+    padding: 2rem;
+    color: black;
+    border-radius: 8px;
+}
+
+#banner-productos h2 {
+    text-align: center;
+}
+
+
+/*
+.padre-banners{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+
+}
+
+@media screen and (max-width: 780px) {
+    .padre-banners {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 523px) {
+    .padre-banners {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+*/
+
+
+.text_banner {
+    text-align: center;
+}
+
+.banners_caracteristicas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/*Redes sociales*/
+
+.img_redes {
+    width: 4rem;
+}
+
+.padre-redes {
+    background-color: #eaeaea;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    padding: 2rem;
 }
 
 /*GRILLA INICIO*/
@@ -314,11 +383,6 @@ ul{
     }
 }
 
-.tabla_horarios {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 /*Footer*/
 #footer {
@@ -428,3 +492,27 @@ ul{
     
 }
 
+/**Modificaciones de estilos de bootstrap**/
+
+.texto-menu {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    display: flex;
+}
+
+.ubicacion-menu {
+    justify-content: right;
+
+}
+
+.color-boton {
+    background-color: white;
+    width: 4rem;
+    height: 4rem;
+}
+
+.parrafo_tienda {
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+}
