@@ -25,10 +25,16 @@ h1{
 
 h2{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: bolder;
+
 }
 
+h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
 
 /*DESKTOP FIRST*/
 /*Grilla productos*/
@@ -36,11 +42,11 @@ h2{
 #grilla_productos {
     display: grid;
     grid-template-areas: 
-    "header header header"
-    "productos productos productos"
-    "footer footer footer";
+    "header header header header header"
+    "productos productos productos productos productos"
+    "footer footer footer footer footer";
 
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     background-color: lightgray;
 }
 
@@ -114,9 +120,15 @@ ul{
 .galeria_productos{
 
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     row-gap: 2rem;
     justify-items: center;
+}
+
+@media screen and (max-width: 1100px) {
+    .galeria_productos {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 @media screen and (max-width: 780px) {
@@ -137,22 +149,25 @@ ul{
 .card_prod{
     width: 28rem;
     height: 38rem;
-    border: solid 2px grey;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem;
+    padding: 1.5rem;
     background-color: white;
+    margin: 1rem;
+    justify-content: center;
 }
 
+
+
 .card_prod img {
-    height: 15rem;
-    width: 15rem;
+    height: 18rem;
+    width: 28rem;
 }
 
 .img_prod {
-    margin-bottom: 2rem;
+    margin-bottom: rem;
 }
 
 .card_titulo {
@@ -280,6 +295,7 @@ ul{
 
 /*GRILLA INICIO*/
 
+/*
 #grilla_inicio {
     display: grid;
     grid-template-areas: 
@@ -291,15 +307,15 @@ ul{
     grid-template-columns: repeat(3, 1fr);
     background-color: lightgray;
 }
-
+*/
 /*Header*/
-
+/*
 #grilla_header {
     grid-area: header;
 }
-
+*/
 /*Presentacion*/
-
+/*
 #presentacion_inicio {
     grid-area: presentacion;
 }
@@ -322,8 +338,8 @@ ul{
         align-items: center;
     }
 }
-
-/*Ubicacion*/
+*/
+/*Ubicacion
 
 #ubicacion_inicio {
     grid-area: ubicacion;
@@ -338,6 +354,7 @@ ul{
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
 @media screen and (max-width: 780px) {
@@ -354,7 +371,7 @@ ul{
     }
 }
 
-/*Horarios*/
+/*Horarios
 
 #horarios_inicio {
     grid-area: horarios;
@@ -383,6 +400,7 @@ ul{
     }
 }
 
+*/
 
 /*Footer*/
 #footer {
@@ -439,11 +457,37 @@ ul{
 /*Formulario*/
 #formulario {
     grid-area: contacto;
-    margin-top: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
+
+.leyenda_form {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.leyenda_form1 {
+    font-size: 1.5rem;
+    margin: 1.5rem;
+}
+
+.leyenda_form2 {
+    font-size: 1.2rem;
+}
+
+.fondo_form {
+    
+    background-color: crimson;
+    padding: 1rem;
+    border-radius: 10px;
+    color: whitesmoke;
+
+}
+
 
 @media screen and (max-width: 780px) {
     #formulario {
@@ -456,8 +500,10 @@ ul{
         display: flex;
         flex-direction: column;
         align-items: center;
+
     }
 }
+
 
 /*Footer*/
 #footer {
@@ -516,3 +562,59 @@ ul{
     font-size: 2.5rem;
     margin-bottom: 4rem;
 }
+
+/*Inicio*/
+.imagen-inicio {
+    width: 60rem;
+    height: 30rem;
+    background-color: crimson;
+
+}
+
+.color-fondo {
+    background-color: lightgray;
+    margin-bottom: 2rem;
+    width: 60rem;
+    height: 40rem;
+    padding: 3rem;
+}
+.parrafo_inicio {
+    font-size: 1.5rem;
+    text-align: end;
+
+}
+
+.contenedor {
+    background-color: red;
+
+}
+.carrusel-marcas {
+    width: 50rem;
+}
+
+.text_banner_horarios {
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin-top: 2rem;
+}
+
+.text_banner_horariostit {
+    margin-top: 5.5rem;
+}
+
+
+.google_maps {
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.horarios {
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.fondo-ubic-horario {
+    background-color: lightgray;
+    padding-bottom: 2rem;
+}
+
