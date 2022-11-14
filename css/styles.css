@@ -2,6 +2,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html{
@@ -120,7 +121,7 @@ ul{
 .galeria_productos{
 
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     row-gap: 2rem;
     justify-items: center;
 }
@@ -603,18 +604,45 @@ ul{
 }
 
 
-.google_maps {
+#ubic-google {
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    margin-top: 4rem;
 }
 
-.horarios {
+#horarios {
     text-align: center;
-    margin-top: 4rem;
+    margin-top: 2rem;
+    border-radius: 8px;
+    padding: 2rem;
+    font-size: 1.5rem;
+
 }
 
-.fondo-ubic-horario {
-    background-color: lightgray;
-    padding-bottom: 2rem;
+.titulo_ubicyhorario {
+    margin-bottom: 2rem;
 }
+
+.titulo_ubicyhorario {
+    background-color: crimson;
+    color: whitesmoke;
+}
+
+#grilla_inicio {
+    max-width: 100%;
+}
+
+.horario {
+    align-items: center;
+    text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+    .tamano-mapa {
+        width: 200;
+
+    }
+}
+
 
