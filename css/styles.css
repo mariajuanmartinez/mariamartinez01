@@ -370,6 +370,65 @@ h3{
 
 /**PAGINA NOVEDADES**/
 
+.n1 {
+    border-radius: 10px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    
+}
+
+.n1:hover {
+    transform: scale(0.7);
+}
+
+.tn1 {
+    font-size: 2.5rem;
+    text-align: center
+}
+
+.pn1 {
+    font-size: 1.5rem;
+}
+
+
+.n2 {
+    border-radius: 10px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.n2:hover {
+    transform: scale(0.7);
+}
+
+
+.in2 img {
+    border-radius: 10px;
+    width: 12rem;
+    
+}
+
+
+.in3 img {
+    border-radius: 10px;
+    width: 20rem;
+}
+
+
 /**PAGINA CONTACTO**/
 
 #formulario {
@@ -449,13 +508,23 @@ input:focus {
 .pasos_titulo img {
     width: 12rem;
     border-radius: 10px;
+    animation-name: carritomov;
+    animation-iteration-count: infinite;
+    animation-timing-function: all;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    
 }
     
-
-
-.pasos_titulo img:hover {
-    transform: translatex(300px);
+@keyframes carritomov {
+    0% {
+        transform: translate(-80px);
+    }
+    100% {
+        transform: translate(80px);
+    }
 }
+
 
 .pasos_titulo:hover {
     transform: scale(1.1);
@@ -483,9 +552,6 @@ input:focus {
     font-size: 1.5rem;
 }
 
-.pasos-desc:hover {
-    transform: scale(1.05);
-}
 
 .pasos-desc-fin {
     text-align: end;
@@ -517,10 +583,3 @@ input:focus {
     transform: scale(1.1);
 }
 
-.imagenlisto {
-    width: 10rem;
-    border-radius: 10px;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-}
