@@ -428,6 +428,11 @@ h3{
     width: 20rem;
 }
 
+.tituloh2:hover {
+    transform: scale(1.5);
+
+}
+
 
 /**PAGINA CONTACTO**/
 
